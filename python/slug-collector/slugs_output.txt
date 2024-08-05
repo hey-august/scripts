@@ -1,0 +1,3 @@
+/blue
+foo/bar
+you/cant/see/me
