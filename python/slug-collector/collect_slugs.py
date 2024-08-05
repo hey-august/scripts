@@ -31,7 +31,7 @@ def get_slugs_from_mdx_files(directory):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 2:
-        print("Usage: python generate_slugs.py <directory>")
+        print("Usage: python collect_slugs.py <directory>")
         sys.exit(1)
 
     directory = sys.argv[1]
