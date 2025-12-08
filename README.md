@@ -9,7 +9,11 @@ Collection of scripts for personal use, organized by language.
 
 ### [hit-api 🏓](https://github.com/hey-august/scripts/tree/main/shell)
 
-A barebones, self-contained tool for making simple REST calls to the SignalWire API over HTTP.
+A barebones, self-contained tool for making requests to the SignalWire API over HTTP.
+
+The script itself sets environment variables, then sets up a curl command with all the correct headers, including base64-encoded basic auth.
+
+The request body itself is stored in an accompanying `data.json` file. The structure and contents of this request body will of course vary by endpoint, but a sample for the Send Call Commands endpoint is included for reference.
 
 #### Usage
 
