@@ -11,6 +11,8 @@ Collection of scripts for personal use, organized by language.
 
 A barebones, self-contained tool for making requests to the SignalWire API over HTTP.
 
+<img width="1373" height="479" alt="Screenshot 2025-12-08 at 3 54 12 PM" src="https://github.com/user-attachments/assets/5b658b31-995a-48a9-8744-02dc54eb8aa7" />
+
 The script itself sets environment variables, then sets up a curl command with all the correct headers, including base64-encoded basic auth.
 
 The request body itself is stored in an accompanying `data.json` file. The structure and contents of this request body will of course vary by endpoint, but a sample for the Send Call Commands endpoint is included for reference.
