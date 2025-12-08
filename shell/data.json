@@ -1,0 +1,19 @@
+{
+  "command": "dial",
+  "params": {
+    "from": "+12223334444",
+    "to": "sip:user@unique-sip-domain-12345678901.sip.signalwire.com",
+    "caller_id": "+12223334444",
+    "fallback_url": "url-placeholder",
+    "status_url": "url-placeholder",
+    "status_events": [
+      "answered",
+      "queued",
+      "initiated",
+      "ringing",
+      "ending",
+      "ended"
+    ],
+    "url": "url-placeholder"    
+  }
+}
