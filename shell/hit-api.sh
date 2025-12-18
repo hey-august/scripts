@@ -7,7 +7,7 @@ TOKEN="token"
 SPACE="spacename"
 
 curl -v -L -g "https://$SPACE.signalwire.com/$ROUTE" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Basic $(echo -n "${PROJECT_ID}:${TOKEN}" | base64)" \
---data @data.json
+	-u ${PROJECT_ID}:${TOKEN}
+	-H "Content-Type: application/json" \
+	-H "Accept: application/json" \
+	--data @data.json
