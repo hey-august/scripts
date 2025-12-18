@@ -16,6 +16,4 @@ curl -v -L -g "https://$SPACE.signalwire.com/$ROUTE" \
 	-u ${PROJECT_ID}:${TOKEN} \
 	-H "Content-Type: application/json" \
 	-H "Accept: application/json" \
-
-	# Load request body from data.json, or file of your choice
-	--data @url.json
+	--data @swml.json
