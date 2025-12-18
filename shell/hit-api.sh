@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Variables
+# Load environment variables from .env file
+if [ -f .env ]; then
+	source .env
+else
+	echo "Error: .env file not found!"
+	exit 1
+fi
+
+# Set endpoint route
 ROUTE="api/calling/calls"
-PROJECT_ID="projectid"
-TOKEN="token"
-SPACE="spacename"
 
 curl -v -L -g "https://$SPACE.signalwire.com/$ROUTE" \
 	-u ${PROJECT_ID}:${TOKEN}
