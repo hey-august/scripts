@@ -20,3 +20,4 @@ curl -L -g "https://$SPACE.signalwire.com/$ROUTE" \
 	-H "Content-Type: application/json" \
 	-H "Accept: application/json" \
 	--data @swml.json
+	-X POST \
