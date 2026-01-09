@@ -12,7 +12,10 @@ fi
 ROUTE="api/calling/calls"
 
 # Send request
-curl -v -L -g "https://$SPACE.signalwire.com/$ROUTE" \
+# -v --verbose		switched off for now, noisy
+# -L --location		
+# -g --globoff		this is what lets us put environment variables in the URL
+curl -L -g "https://$SPACE.signalwire.com/$ROUTE" \
 	-u ${PROJECT_ID}:${TOKEN} \
 	-H "Content-Type: application/json" \
 	-H "Accept: application/json" \
